@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Meenal Baberwal</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -44,6 +45,53 @@
       line-height: 1.6;
       color: #444;
     }
+    .ribbon {
+      background-color: #3949ab;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+    }
+    .ribbon a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 22px;
+    }
+     .footer {
+  background-color: white;
+  padding: 30px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer-icons {
+  display: inline-flex;
+  justify-content: center;
+  gap: 24px; /* spacing between icons */
+}
+
+.footer-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 14px;          /* small text */
+  color: #555;              /* subtle dark gray */
+  margin-top: 16px;         /* spacing from icons */
+  text-align: center;
+}
     @media (max-width: 768px) {
       .card, .card.reverse {
         flex-direction: column;
@@ -55,29 +103,90 @@
   </style>
 </head>
 <body>
+   <div class="ribbon">
+    <a href="javascript:history.back()">←</a> HomePage
+  </div>
+
   <div class="container">
     <h1>Projects</h1>
     <div class="card">
-      <img src="project1.jpg" alt="AI Diagnosis Tool">
+      <img src="Hotel.jpeg" alt="AI Diagnosis Tool">
       <div class="text">
-        <h2>AI-based Diagnosis Tool</h2>
-        <p>Deep learning model to detect diseases in chest X-rays...</p>
-      </div>
+        <h2>Revolutionize Hotel Search with AI</h2>
+        <p><em>Apr 2025</em></p>
+        <p>Developed an intelligent hotel recommendation system that turns natural language queries into personalized, ranked results using LLMs and smart filtering.</p>
+         <ul class="text-left list-disc pl-6">
+        <li>Built an AI-powered hotel recommendation system that understands natural language queries and returns 
+top-ranked results. </li>
+<li>Used OpenAI language models to extract user preferences, detect irrelevant queries, and interpret nuanced 
+requests. </li>
+<li>Developed custom logic to classify hotel features into amenities, accepted, and ignored attributes 
+dynamically using LLMs. </li>
+<li>Implemented intelligent filtering and scoring to rank hotels based on user input and hotel metadata. </li>
+<li>Integrated a user interface that sends personalized hotel lists via email, enhancing user experience.</li>
+</ul>      
+</div>
     </div>
     <div class="card reverse">
-      <img src="project2.jpg" alt="AR Chemistry Lab">
+      <img src="Movie.jpeg" alt="AR Chemistry Lab">
       <div class="text">
-        <h2>AR Chemistry Lab</h2>
-        <p>Unity app that simulates safe chemical reactions in augmented space...</p>
+        <h2>Movie Ticket Booking Portal</h2>
+        <p><em>Jan 2022</em></p>
+        <p>Built a robust and user-friendly Movie Ticket Booking Portal using modern microservices architecture and cloud deployment to deliver seamless ticket reservations and real-time seat availability.</p>
+        <ul class="text-left list-disc pl-6">
+        <li>Developed a scalable Movie Ticket Booking Portal leveraging microservices architecture with Spring Boot and a modern frontend using Angular, HTML, and CSS for a seamless user experience.</li>
+        <li>Deployed the application using Docker and AWS, ensuring high availability, easy scaling, and efficient cloud management.</li>
+        <li>Implemented REST APIs with comprehensive Swagger documentation, enabling smooth integration and maintainability across services.</li>
+          </ul>
       </div>
     </div>
     <div class="card">
-      <img src="project3.jpg" alt="NLP Summarizer">
+      <img src="JobPortal.jpeg" alt="NLP Summarizer">
       <div class="text">
-        <h2>NLP Summarizer</h2>
-        <p>Summarizes large scientific papers using transformer-based models...</p>
+        <h2>Online Job Portal Application and chatbot</h2>
+        <p><em>Aug 2020</em></p>
+        <p>Designed and developed an AI-integrated Online Job Portal that streamlines recruitment using Dialogflow NLP, Firebase backend, and a Flutter-based cross-platform UI for seamless, real-time user interaction.</p>
+        <ul class="text-left list-disc pl-6">
+        <li>Implemented a smart chatbot using Dialogflow and Firebase Cloud Functions, enabling natural language processing, real-time data handling, and reducing query response time by 30%.</li>
+
+<li>Built a multi-user dashboard with Flutter and Dart, providing recruiters and job seekers with an intuitive, responsive interface powered by Firebase authentication and database services.</li>
+
+<li>Integrated features like quizzes and FAQs, supporting job seekers in preparing for aptitude tests and improving engagement.</li>
+
+<li>Enabled advanced recruitment analytics, facilitating strategic decision-making through streamlined data management and real-time applicant tracking.</li>
+</ul>      
+</div>
+    </div>
+    <div class="card reverse">
+      <img src="Metro.jpeg" alt="AR Chemistry Lab">
+      <div class="text">
+        <h2>Pune Metro Database Management</h2>
+        <p><em>Dec 2019</em></p>
+        
+        <p>Developed a real-time Metro Ticket Booking System using Java, JDBC, and MySQL, optimizing data handling and improving user convenience through a robust backend and seamless portal integration.</p>
+        <ul class="text-left list-disc pl-6">
+        <li>Engineered a relational database system with optimized MySQL schemas, functions, and triggers, resulting in 30% faster data retrieval and a 20% reduction in booking conflicts.</li>
+        <li>Integrated Java-based backend with REST APIs, enabling online ticket bookings, real-time updates, and automatic token generation for streamlined metro access.</li>
+        <li>Designed and implemented a scalable data model, ensuring accurate fare calculation and efficient ticketing for short-distance travel through the NetBeans IDE environment.</li>
+      </ul>
       </div>
     </div>
   </div>
+   <!-- Footer -->
+<footer class="footer">
+  <div class="footer-icons">
+    <a href="mailto:meenal.baberwal@fau.de" target="_self">
+      <img src="data:image/png;base64,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" alt="Email" />
+    </a>
+    <a href="https://www.linkedin.com/in/meenalbaberwal/" target="_blank">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8KZsIAVr0AW78AXb/A1O3O3vGvyegAZMHF0+ufvuMAYsEAX8AAXL8AWL4absX2+f0Aa8VdkNHo8PisxedunNYydceBqNvW5PTg6vZNh865zuo2d8jO3PCStN+HrNw/f8tfktJ7pdo9fsvl7vgATruaueG0zOlOhc2Lsd/i1EwsAAAEDElEQVR4nO2dfZfhMBSH0RixSbWlqmowzKyZ/f5fcFl6puQWZ46bSPb3/Nsc9Ujzcm9S6XQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfSfNxFvVcMMrGecovmCeR6rpCRUnOLTiNpDO/AzKacgs69TvAq5i7F9wrMj6oaeL2ET0iE77u5imqkLUSx+560SZqzGaYuXY7kbEZjlyrnRixGfZcq53owRCGMHQODGH4M0N5IFxDqUVWvBZZrK1IWjeUIlkvJ/vrk+Us0wEaynj1Hc6kawtJAMuGKpmfFSozdkW7hjKZXJSasMfJVg2lmBvFyphZ0aph9IsotxLhGMpXqhx3PsemoaCqkL0SLRpKabbCAyXvqGjTsKALMj+mNg2rlpLvoRi25vWqYAzb6vAtFEN6sNgTTjvsXk7Zjsx5Q0Wb42G8IAvmwYyHbV0NbzO0PC9dEuUWzGtUdmOLxCyWckeIduNDbT6nFfcinOUYX2/OC6UVe6rGdp5GF822uEz4c1H2c23RZnjMRaX9sY3dKA7ypUokX9Pt9C0TVtbBneS8pVRa2Up6Y90ChjB0j3+G+25qz/2rc34ZShWP1Gs1rqq3QvYicc/6nOV5aWSibxT4jh6VyLaL7yg6LQfbRN+UtGqoV0OTdUNRr83rg5OiFFXfvEu5Tm4sfNiND4mv2Bk0QnzxaV6fHLePxe9UcLkn3XWvTm6fzHBgXv9nKHur9julm9GVavTDUGXl1Xv9uvKkemGoio8bN1u0dzg+GMqMTkOefUrss6Gm16zOmbXlJD0w/E2nWS8pWp7T5zec37lR+6UlK/n8huntRnikZev88xvezQvd2QRk2LLSGpLhjpy9hWQ4D96QHjCCMtxSleiT4WQ5zAfDK3PwATWv8cYw3b1qEQsR6+667YW7knoTyRfDhRJ17kkK1TaP89hwd7aGIyMiF3CA2tXhh+HiYpFKxvRUjlpu9cIwNUJ4tSELUp2pF4Yz44tLRUb9K08N067ZvOi9qtS8zQfDPhE00HtzqM1HPhhSrUsW1KD4SfwWPhh+EWOA1FRv2ififA8M6T3EI2r25qnhB7mQRn4WlavxwHBOpphiqqinhiVpKKh/g/DUkGpc3a6mBkQYPhYY1sAQhk1g+FhgWANDGDaB4WOBYQ0MYdgEho8FhjUwhGETGD4WGNbAEIZNYPhYYFgDQxg2geFjgWFNUIZ692Lyp/mG5ao0rpf0BnU9Iz4rd70n6kdvyUYt70/eW9SvN51/AgxhCEP3wBCGMHQPn2H4ZwXx/5/8ffCd9xT+mV3hn7sW/tl5z1GJnOcfdjrT1n/jsCfIfkxn4OeQ/gdnyR7PAx6FfB4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAyF8IaWQmD5W4JAAAAABJRU5ErkJggg==" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/meenalbaberwal" target="_blank">
+      <img src="data:image/png;base64,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" alt="GitHub" />
+    </a>
+    
+  </div>
+   <p class="footer-text">&copy; 2025 Meenal Baberwal</p>
+</footer>
 </body>
 </html>
